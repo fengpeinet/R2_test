@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>專屬推廣說明會 - 立即報名</title>
+  <meta name="description" content="零成本報名推廣說明會，立刻搶佔名額！">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Outfit:wght@800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="app-container">
+
+    <!-- 頂部圖片展示區 (模擬長條圖) -->
+    <header class="hero-section">
+      <div class="badge">FREE TICKET</div>
+      <h1 class="main-title">掌握未來趨勢<br><span class="highlight-pink">流量爆發</span>說明會</h1>
+      <p class="subtitle">限量 0 元報名，額滿即止</p>
+
+      <!-- 手繪箭頭裝飾 -->
+      <div class="decor-arrow">⬇️ 滑動了解更多 ⬇️</div>
+    </header>
+
+    <section class="banner-images">
+      <!-- 這裡預留給未來的長條大圖 -->
+      <div class="placeholder-img" style="background: linear-gradient(135deg, #1a2a4b, #0A1628);">
+        <h2 class="placeholder-text"><span class="highlight-green">為何你必須參加？</span><br>獨家內幕首度公開</h2>
+      </div>
+      <div class="placeholder-img" style="background: linear-gradient(45deg, #0A1628, #111a30);">
+        <h2 class="placeholder-text"><span class="highlight-yellow">講師陣容</span><br>頂尖實戰專家親授</h2>
+      </div>
+    </section>
+
+    <!-- 報名表單區 -->
+    <main class="form-section">
+      <div class="form-header">
+        <h2>立即卡位報名</h2>
+        <p>填寫下方資料，獲取免費入場資格</p>
+      </div>
+
+      <form id="registrationForm" class="registration-form">
+        <div class="form-group">
+          <label for="entryName">姓名 <span class="required">*</span></label>
+          <input type="text" id="entryName" name="name" placeholder="請輸入您的真實姓名" required>
+        </div>
+
+        <div class="form-group">
+          <label for="entryPhone">聯絡電話 <span class="required">*</span></label>
+          <input type="tel" id="entryPhone" name="phone" placeholder="0912345678" required>
+        </div>
+
+        <div class="form-group">
+          <label for="entryEmail">Email <span class="required">*</span></label>
+          <input type="email" id="entryEmail" name="email" placeholder="需接收說明會連結" required>
+        </div>
+
+        <div class="form-group">
+          <label for="entryLineId">LINE ID <span class="optional">(選填)</span></label>
+          <input type="text" id="entryLineId" name="lineId" placeholder="方便活動前聯絡">
+        </div>
+
+        <div class="form-group">
+          <label for="entryReferrer">推薦人 <span class="optional">(選填)</span></label>
+          <input type="text" id="entryReferrer" name="referrer" placeholder="推薦您參加的朋友姓名">
+        </div>
+
+        <!-- 場次選擇 -->
+        <div class="form-group session-group">
+          <label>選擇場次 <span class="required">*</span></label>
+
+          <label class="radio-card">
+            <input type="radio" name="sessionDate" value="2026/04/22 20:00" required>
+            <div class="card-content">
+              <span class="session-name">第一場</span>
+              <span class="session-time">4/22 (三) 20:00</span>
+            </div>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="sessionDate" value="2026/04/29 20:00">
+            <div class="card-content">
+              <span class="session-name">第二場</span>
+              <span class="session-time">4/29 (三) 20:00</span>
+            </div>
+          </label>
+        </div>
+
+        <button type="submit" id="submitBtn" class="cta-button">
+          <span class="btn-text">立即報名</span>
+          <span class="btn-loader" style="display: none;">處理中...</span>
+        </button>
+        <p class="form-footer-note">送出表單代表您同意我們的隱私權政策，並同意接收系統發送之提醒信件。</p>
+      </form>
+
+      <!-- 成功訊息區 (預設隱藏) -->
+      <div id="successMessage" class="success-message" style="display: none;">
+        <div class="success-icon">🎉</div>
+        <h3>報名成功！</h3>
+        <p>確認信已寄至您的信箱。<br>我們期待在說明會上與您相見！</p>
+      </div>
+
+    </main>
+
+    <footer class="app-footer">
+      <div class="watermark">FENGPEINET</div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
