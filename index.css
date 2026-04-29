@@ -523,6 +523,41 @@ body {
 }
 
 /* 浮動 LINE 按鈕 */
+.form-float-btn {
+  position: fixed;
+  right: 16px;
+  top: calc(50% - 120px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-pink), #d4007e);
+  color: #fff;
+  text-decoration: none;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  box-shadow: 0 4px 20px rgba(255, 62, 157, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 22px;
+  animation: formGlow 2.5s ease-in-out infinite;
+}
+
+.form-float-btn:active {
+  transform: scale(0.95);
+  animation: none;
+}
+
+@keyframes formGlow {
+  0%, 100% { box-shadow: 0 4px 20px rgba(255, 62, 157, 0.5); }
+  50% { box-shadow: 0 4px 32px rgba(255, 62, 157, 0.9), 0 0 20px rgba(255, 62, 157, 0.4); }
+}
+
 .line-float-btn {
   position: fixed;
   top: 50%;
