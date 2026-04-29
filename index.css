@@ -32,6 +32,7 @@ body {
   background-color: var(--color-bg);
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
   box-shadow: 0 0 40px rgba(0, 212, 255, 0.08);
 }
 
