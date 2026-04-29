@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+  if (new URLSearchParams(window.location.search).has('preview')) {
+    document.getElementById('registrationForm').style.display = 'none';
+    document.getElementById('successMessage').style.display = 'block';
+  }
   const form = document.getElementById('registrationForm');
   const submitBtn = document.getElementById('submitBtn');
   const btnText = submitBtn.querySelector('.btn-text');
